@@ -1,0 +1,30 @@
+{
+    "name": "schnitzler/extbase-with-symfony-forms",
+    "description": "An extension that shows how to create forms with symfony components in TYPO3",
+    "type": "typo3-cms-extension",
+    "keywords": ["TYPO3", "extbase", "symfony", "form", "validation", "twig"],
+    "license": ["GPL-2.0-or-later"],
+    "authors": [
+        {
+            "name": "Alexander Schnitzler"
+        }
+    ],
+    "replace": {
+        "extbase_with_symfony_forms": "self.version"
+    },
+    "require": {
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-extbase": "^9.5",
+        "symfony/config": "^4.2",
+        "symfony/form": "^4.2",
+        "symfony/security-csrf": "^4.2",
+        "symfony/translation": "^4.2",
+        "symfony/twig-bridge": "^4.2",
+        "symfony/validator": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Schnitzler\\ExtbaseWithSymfonyForms\\": "Classes/"
+        }
+    }
+}

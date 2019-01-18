@@ -1,0 +1,25 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+{% if errors.count() > 0 %}
+<div class="errors">
+    Errors occurred
+</div>
+{% endif %}
+
+<fieldset class="data">
+    {{ form_widget(form.name, {'attr': {'placeholder': 'Name*'}}) }}
+    {{ form_errors(form.name) }}
+
+    {{ form_widget(form.email, {'attr': {'placeholder': 'Email*'}}) }}
+    {{ form_errors(form.email) }}
+</fieldset>
+
+<fieldset class="message">
+    {{ form_widget(form.message, {'attr': {'placeholder': 'Message'}}) }}
+    {{ form_errors(form.message) }}
+</fieldset>
+
+<fieldset class="submit">
+    {{ form_widget(form.submit) }}
+</fieldset>
+{{ form_end(form) }}
